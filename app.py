@@ -23,7 +23,7 @@ def calculadora():
         else:
             faixa = "🔴 Obesidade"
 
-        return render_template('index.html', nome=nome,peso=peso,altura=altura, imc=imc, faixa=faixa)
+        return render_template('index.html', nome=nome,peso=peso,altura=altura, imc=round(imc, 2), faixa=faixa)
 
     return render_template('index.html')
 
